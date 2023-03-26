@@ -1,4 +1,17 @@
 /* Definimos el estilo base para la calculadora */
+.container {
+  width:100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: aliceblue;
+  background-image: url(https://i.ibb.co/yNvwCx3/Naruto-Uzumaki.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+    background-size: 100%;
+    animation: cambio-fondo 20s ease infinite;
+}
 #calculadora {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -10,8 +23,23 @@
     box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
     font-size: 24px;
     font-family: 'Roboto', sans-serif;
+    max-width: 50%;
   }
   
+  @keyframes cambio-fondo {
+    0% {
+      background-image: url(https://i.ibb.co/yNvwCx3/Naruto-Uzumaki.jpg);
+    }
+    20% {
+      background-image: url(https://i.ibb.co/LtQWCLC/e45a8927-c3ea-4dcd-abbd-22bc3e7aa5c9.jpg);
+    }
+    50% {
+      background-image: url(https://i.ibb.co/7GPdnpK/My-Anime-For-Life-myanimeforlife-Profile-Pinterest.jpg);
+    }
+    100% {
+      background-image: url(https://i.ibb.co/dDzfJhN/Naruto-uzumaki-you-left-as-a-legend.jpg);
+    }
+  }
   /* Definimos el estilo base para los botones */
   .botones {
     padding: 10px;
