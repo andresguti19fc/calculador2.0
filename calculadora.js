@@ -44,3 +44,10 @@ function botonIgual() {
   }
   display.value = resultado;
 }
+
+function botonBorrar() {
+  display.value = "";
+  display.focus();
+  display.selectionStart = display.selectionEnd = 0;
+  display.scrollTop = 0;
+}
